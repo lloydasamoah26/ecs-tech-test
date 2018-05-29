@@ -19,8 +19,8 @@ Feature: ECS Test
     |browser|
     |Chrome|
 
-
-    @Firefox
-    Examples: Firefox
-    |browser|
-    |Firefox|
+#
+#    @Firefox
+#    Examples: Firefox
+#    |browser|
+#    |Firefox|
