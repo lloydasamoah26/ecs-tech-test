@@ -14,18 +14,18 @@ const paperStyle = {
   backgroundColor: '#ced7e5',
 };
 
-const Logo = () => <Img src={logo} />;
+const Logo = () => <Img id="WelcomeSectionLogo" src={logo} />;
 
 const Introduction = props => (
   <section id="home">
     <Paper style={paperStyle} zDepth={3}>
       <Logo />
-      <h1 className="title">Welcome to the ECSDigital Engineer in Test tech test</h1>
-      <p className="intro">
+      <h1 id="WecomeSectionTitle" className="title">Welcome to the ECSDigital Engineer in Test tech test</h1>
+      <p id="WelcomeSectionIntro" className="intro">
           Using the programming language of your choice we want you to create a selenium framework in .src/test/e2e.
           Use selenium to click the button below to continue with the test.
       </p>
-      <RaisedButton data-test-id={"render-challenge"}  label="Render the Challenge" primary onClick={props.showChallenge} />
+      <RaisedButton id="renderChallengeButton"  label="Render the Challenge" primary onClick={props.showChallenge} />
       <p>You might have noticed that clicking that button starts a really, really long scroll. I wonder how you are going to handle that?</p>
       <span style={{fontSize: 60}} role="img" aria-label="down-emoj" >⬇️</span>
     </Paper>

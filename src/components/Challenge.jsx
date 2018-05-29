@@ -17,7 +17,7 @@ const Challenge = () => (
     <Paper className={"challenge"} style={paperStyle} zDepth={3}>
 
       <div>
-        <h1>Arrays Challenge</h1>
+        <h1 id="ChallengeSectionTitle"> Arrays Challenge</h1>
 
         <h3>Below are a number of rows with integers</h3>
 

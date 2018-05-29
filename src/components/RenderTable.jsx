@@ -5,6 +5,8 @@ import {
   TableRow,
   TableRowColumn,
 } from 'material-ui/Table';
+
+
  
 const array1 = [23, 50, 63, 90, 10, 30, 155, 23, 18];
 const array2 = [133, 60, 23, 92, 6, 7, 168, 16, 19];
@@ -35,7 +37,7 @@ export default class CustomTable extends Component {
 
   render() {
     return (
-      <div>
+      <div id="ArrayTable">
         <Table
           height={this.state.height}
           fixedHeader={this.state.fixedHeader}
@@ -49,14 +51,14 @@ export default class CustomTable extends Component {
             showRowHover={this.state.showRowHover}
             stripedRows={this.state.stripedRows}
           >
-          <TableRow>
-            { array1.map((item, index) => <TableRowColumn className={`array-item-1-${index}`} key={index}>{item}</TableRowColumn>)}  
+          <TableRow className="TableRows">
+            { array1.map((item, index) => <TableRowColumn id="row1" className={`array-item-1-${index}`} key={index}>{item}</TableRowColumn>)}  
           </TableRow>
-          <TableRow>
-            { array2.map((item, index) => <TableRowColumn className={`array-item-2-${index}`}  key={index}>{item}</TableRowColumn>)}  
+          <TableRow className="TableRows">
+            { array2.map((item, index) => <TableRowColumn id="row2" className={`array-item-2-${index}`}  key={index}>{item}</TableRowColumn>)}  
           </TableRow>
-          <TableRow>
-            { array3.map((item, index) => <TableRowColumn className={`array-item-3-${index}`}  key={index}>{item}</TableRowColumn>)}  
+          <TableRow className="TableRows">
+            { array3.map((item, index) => <TableRowColumn id="row3" className={`array-item-3-${index}`}  key={index}>{item}</TableRowColumn>)}  
           </TableRow>
         </TableBody>
       </Table>

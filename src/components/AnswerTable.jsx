@@ -83,18 +83,18 @@ export default class AnswerTable extends Component {
         <Paper style={paperStyle} zDepth={2}>
           <h2>Submit your answers</h2>
           <Paper style={answerStyle}>
-            <TextField hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
+            <TextField hintStyle={rowStyle} hintText="submit challenge 1" Name='submitField1' underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
             <Divider />
-            <TextField  hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
+            <TextField  hintStyle={rowStyle} hintText="submit challenge 2" Name='submitField2' underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
             <Divider />
-            <TextField  hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
+            <TextField  hintStyle={rowStyle} hintText="submit challenge 3" Name='submitField3' underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
             <Divider />            
-            <TextField  hintStyle={rowStyle} hintText="Your Name" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'challenger-name')}/>
+            <TextField  hintStyle={rowStyle} hintText="Your Name" Name='yourNameField' underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'challenger-name')}/>
           </Paper>
           <p> On submission we will verify if your answers are correct </p>
           <p>Please be aware this challenge is not about spamming the api to get the correct answers, but your chosen implementation.</p>
           <p>Good Luck!</p>
-          <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
+          <RaisedButton Name='SubmitAnswersButton' label="Submit Answers" primary={true} onClick={this.submitForm}/>
          <DialogBox data-test-id={"render-challenge"} className={"submit-button"}  open={this.state.dialogBoxOpen} complete={this.state.complete} handleClose={this.handleClose} />
         </Paper>
       </div>

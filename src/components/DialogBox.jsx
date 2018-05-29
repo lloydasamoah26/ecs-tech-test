@@ -29,7 +29,6 @@ export default class DialogBox extends React.Component {
           open={this.props.open}
           onRequestClose={this.handleClose}
         >
-
           {dialogText(this.props.complete)}
         </Dialog>
       </div>
